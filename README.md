@@ -1,5 +1,29 @@
-# heykosta_page
-Personal site: Django + FastAPI backend (by hands), Astro frontend (firstly ai).
+# HeyKosta - личный сайт-резюме
+Личный сайт: визитка, витрина сервисов и полигон.
+Бэкенд написан вручную, фронт — с помощью ИИ.
+
+**Живая версия:** пока нет
+
+## Стек
+
+Python 3.13 · Django 5 · DRF · PostgreSQL · Redis · Docker · GitHub Actions
+Позже: FastAPI, Astro, Prometheus
+
+## Запуск локально
+
+```
+пока нечего запускать — появится на задаче 0.5
+```
+
+## Структура
+
+- `backend/` — Django: контент, админка, API
+- `frontend/` — статический фронт
+- `docs/` — решения по архитектуре и замеры
+
+## Статус
+
+- Этап 0 — каркас. Подробности в заметках директорий.
 
 
 ## License

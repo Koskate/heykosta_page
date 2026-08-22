@@ -216,3 +216,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+dist/
+.astro/
+
+# Django
+staticfiles/
+media/
+*.sqlite3
+
+# Переменные окружения
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
