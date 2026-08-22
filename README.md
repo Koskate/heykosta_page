@@ -32,3 +32,4 @@ Python 3.13 · Django 5 · DRF · PostgreSQL · Redis · Docker · GitHub Action
 This code is published for viewing and evaluation purposes only.
 Copying, use in other projects, and redistribution are prohibited
 without the author's prior written permission.
+проверка
