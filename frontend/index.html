@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Костя — бэкенд-разработчик</title>
+<meta name="description" content="Собираю устойчивые сервисы, чтобы вы могли заниматься своим делом без головной боли. Сначала задача, потом решение, потом код, который встроится без сюрпризов.">
+<link rel="canonical" href="https://heykosta.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Костя">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Костя — бэкенд-разработчик">
+<meta property="og:description" content="Собираю устойчивые сервисы, чтобы вы могли заниматься своим делом без головной боли. Сначала задача, потом решение, потом код, который встроится без сюрпризов.">
+<meta property="og:url" content="https://heykosta.com/">
+<meta property="og:image" content="https://heykosta.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Костя — бэкенд-разработчик">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#fbfbfb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%23b45309'/%3E%3Cpath%20d='M11%209v14M11%2016.4L20%209M13.4%2016.4L21%2023'%20fill='none'%20stroke='%23fbfbfb'%20stroke-width='2.6'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<style>
+  :root {
+    color-scheme: light dark;
+
+    --bg:            #fbfbfb;
+    --text:          #1a1a1a;
+    --muted:         #565656;
+    --accent:        #b45309;
+    --accent-strong: #83400a;
+    --selection:     rgba(180, 83, 9, 0.16);
+
+    --size-l: clamp(2rem, 6vw, 2.5rem);
+    --size-m: 1.125rem;
+    --size-s: 0.9375rem;
+
+    --gap: clamp(4rem, 9vw, 5.5rem);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:            #121212;
+      --text:          #ededed;
+      --muted:         #a3a3a3;
+      --accent:        #f0b160;
+      --accent-strong: #f8cf95;
+      --selection:     rgba(240, 177, 96, 0.22);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
+  }
+
+  body {
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 0 1.5rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: var(--size-m);
+    line-height: 1.65;
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    -webkit-tap-highlight-color: var(--selection);
+  }
+
+  ::selection { background: var(--selection); }
+
+  header  { padding-top: clamp(4rem, 14vh, 7rem); }
+  main    { margin-top: var(--gap); }
+  section + section { margin-top: var(--gap); }
+  footer  { margin-top: var(--gap); padding-bottom: clamp(4rem, 10vh, 6rem); }
+
+  h1 {
+    margin: 0;
+    font-size: var(--size-l);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  .tagline {
+    margin: 1.5rem 0 0;
+    max-width: 34rem;
+  }
+
+  h2 {
+    margin: 0 0 1.75rem;
+    font-size: var(--size-s);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  ol {
+    margin: 0;
+    padding-left: 2.25rem;
+  }
+
+  ol li::marker {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  ol li + li { margin-top: 1.25rem; }
+
+  .links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .links li + li { margin-top: 0.875rem; }
+
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+
+  a:hover {
+    color: var(--accent-strong);
+    text-decoration-thickness: 2px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: var(--size-s);
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Костя</h1>
+  <p class="tagline">Собираю устойчивые сервисы, чтобы вы&nbsp;могли заниматься своим делом без головной боли.</p>
+</header>
+
+<main>
+  <section aria-labelledby="how">
+    <h2 id="how">Как я&nbsp;работаю</h2>
+    <ol>
+      <li>Сначала мы&nbsp;чётко определяем проблему, которую предстоит решить.</li>
+      <li>Дальше обсуждаем решение, разумное по&nbsp;цене и&nbsp;качеству.</li>
+      <li>После согласования я&nbsp;делаю и&nbsp;передаю то, что встраивается в&nbsp;ваш продукт без сюрпризов.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="links">
+    <h2 id="links">Ссылки</h2>
+    <ul class="links">
+      <li><a href="https://github.com/Koskate" rel="me noopener" translate="no">GitHub</a></li>
+      <li><a href="https://t.me/k_starplat" rel="me noopener" translate="no">Telegram</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Скоро здесь появятся проекты и&nbsp;разборы технологий.</p>
+</footer>
+
+</body>
+</html>
