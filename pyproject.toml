@@ -1,0 +1,40 @@
+[project] # стандарт PEP 621
+name = "heykosta-page"
+version = "0.1.0"
+description = "Личный сайт-резюме: демонстрация компетенций"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups] # не тащит лишнее в прод
+dev = ["ruff", "mypy", "pre-commit", "pytest"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+extend-exclude = [".venv", "migrations"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W", # pycodesyle - стиль по PEP 8
+    "F", # pyflakes - неиспользуемые импорты и переменные
+    "I", # isort - порядок импортов
+    "N", # pep8-naming - имена классов, функций, констант
+    "UP", # pyupgrade - устаревший синтаксис до свежего Python
+    "B", # bugbear - поиск скрытых багов и ловушек
+    "C4", # оптимизация генераторов и словарей
+    "SIM", # simplify - упрощение сложных конструкций
+    "RUF", # правила самого ruff
+    "PT", # правильно ли написаны тесты
+]
+ignore = ["E501"] # проверка макс длины строки (88)
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.13" # какой синтаксис ожидать
+strict = true # включаем абсолютно все проверки типов
+warn_unreachable = true # подсветка кода, который никогда не выполнится
+show_error_codes = true # выводит код ошибки в терминал
+files = ["backend"] # проверяет только папку backend/
+exclude = ["migrations"] # игнорируем папку с миграциями
