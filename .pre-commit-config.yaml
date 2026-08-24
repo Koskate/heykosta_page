@@ -14,8 +14,8 @@ repos: # Корень, начинает список репозиториев с
   - repo: https://github.com/pre-commit/pre-commit-hooks # Стандартные проверки
     rev: v6.0.0
     hooks:
-      - id: trailing-whitespace # Удаляем невидимые пробелы в конце строк (не мусорим в истории git)
-      - id: end-of-file-fixer # Стандарт POSIX (файл заканчивается на 1 пустую строку)
+      #- id: trailing-whitespace # Удаляем невидимые пробелы в конце строк (не мусорим в истории git)
+      #- id: end-of-file-fixer # Стандарт POSIX (файл заканчивается на 1 пустую строку)
       - id: check-yaml # Проверка всех .yaml/.yml на опечатки в синтаксисе
       - id: check-toml # Проверка всех .toml
       - id: check-added-large-files # Защищаем репозиторий от случайного добавления тяжелых файлов (умолч 500 КБ)
