@@ -1,4 +1,7 @@
 # HeyKosta - личный сайт-резюме
+> Состояние main CI:
+![CI](https://github.com/Koskate/heykosta_page/actions/workflows/ci.yml/badge.svg)
+
 Личный сайт: визитка, витрина сервисов и полигон.
 Бэкенд написан вручную, фронт — с помощью ИИ.
 
