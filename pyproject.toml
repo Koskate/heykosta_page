@@ -1,3 +1,4 @@
+# Манифест, указывает версии диапазонами
 [project] # стандарт PEP 621
 name = "heykosta-page"
 version = "0.1.0"
